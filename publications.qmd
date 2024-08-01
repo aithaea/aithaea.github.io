@@ -1,0 +1,23 @@
+---
+title: "Publications"
+toc: true
+---
+
+{{< fa scroll >}}: Conference Paper | 
+{{< fa newspaper >}}: Journal Article | 
+{{< fa toolbox >}}:Workshop Paper |
+{{< fa trophy >}}: Award Winning
+
+## 2023
+
+{{< fa scroll >}} **Scott, L.**, E. Cecchinato, M., Coventry, L., Warner, M. (2023). [Evaluating the Effects of Culture and Relationship Strength on Misinformation Challenging Behaviours Within the UK](https://doi.org/10.1007/978-3-031-42286-7_23). In: Abdelnour Nocera, J., Kristín Lárusdóttir, M., Petrie, H., Piccinno, A., Winckler, M. (eds) Human-Computer Interaction – INTERACT 2023. INTERACT 2023. Lecture Notes in Computer Science, vol 14144. Springer, Cham. 
+
+{{< fa scroll >}} **Scott, L.**, Coventry, L., Cecchinato, M.E., Warner, M. (2023) ["I figured her feeling a little bit bad was worth it to not spread that kind of hate: Exploring How UK Families Discuss and Challenge Misinformation](https://dl.acm.org/doi/abs/10.1145/3544548.3581202). In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (pp. 1-15). Association for Computing Machinery, Hamburg, Germany, 23/04/23.
+
+## 2022
+
+
+{{< fa toolbox >}} **Scott, L.**, Warner, M. Cecchinato, M.E. (2022) Addressing Misinformation within Family Networks. CSCW Workshop on Information-Seeking, [Finding Identity: Exploring the Role of Online Health Information in Illness Experience](https://sites.google.com/view/info-seeking101/home).  
+
+## 2021
+{{< fa scroll >}} {{< fa trophy >}} **Scott, L.** & Dalton, N. (2021) [Studying the Impact of Gamification on Motivation in Remote Programming Education](https://nrl.northumbria.ac.uk/id/eprint/47507/). In Proceedings of the 20th European Conference on e-Learning: ECEL 2021. Academic Conferences International Limited, Reading, Berlin, Germany, 28/10/21. [Certificate of Merit](https://www.academic-conferences.org/conferences/ecel/ecel-future-and-past/)

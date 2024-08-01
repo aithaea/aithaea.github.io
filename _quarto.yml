@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  favicon: img/icon.png
+  twitter-card: true
+  site-url: https://laurenscott.dev
+  title: "Lauren Scott"
+  cookie-consent: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - publications.qmd
+      - about.qmd
+
+format:
+  html:
+    theme:
+      light: theme-light.scss
+      dark: theme-dark.scss
+    css: styles.css
+    toc: true
+    page-layout: full
+
+
+

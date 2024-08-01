@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am a passionate PhD student in the Computer and Information Sciences Department at Northumbria University who is a member of the Northumbria Social Computing research group and a visiting PhD researcher at University College London within the Information Security Research Group. I am currently conducting interdisciplinary research around misinformation and family communications, and I am also interested in research surrounding digital learning tools."
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About",
+    "section": "Experience",
+    "text": "Experience\n Associate Lecturer - Computer Science - Northumbria University (Newcastle upon Tyne, UK | 2022 - Current)\n Senior Research Assistant - Northumbria University (Newcastle upon Tyne, UK | 2023 - 2024)\n Demonstrator - Northumbria University (Newcastle upon Tyne, UK | 2021 - 2023)"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n PhD in Computer Science - Northumbria University (Newcastle upon Tyne, UK - 2021-Current)\n PGCE Computer Science with QTS - Newcastle Unniversity (Newcastle upon Tyne, UK - 2021-Current)\n MSc in Advanced Computer Science - Northumbria University (Newcastle upon Tyne, UK - 2020)\n BSc in Computer Science - Northumbria University (Newcastle upon Tyne, UK - 2019)"
+  },
+  {
+    "objectID": "about.html#talks-and-presentations",
+    "href": "about.html#talks-and-presentations",
+    "title": "About",
+    "section": "Talks and Presentations",
+    "text": "Talks and Presentations\n Lab Talks |  Public/Visiting talks |  Conference Presentations\n Misinformation, communication, and challenges: how technology can be used to support misinformation correction within UK family networks? Mar ’24 NorSC Seminar Series\n Evaluating the Effects of Culture and Relationship Strength on Misinformation Challenging Behaviours Within the UK INTERACT 2023\n “I figured her feeling a little bit bad was worth it to not spread that kind of hate”: Exploring How UK Families Discuss and Challenge Misinformation. CHI 2023.\n Handling misinformed family members: what do individuals do when their family are misinformed? CHIRP Research Talk Series\n Studying the Impact of Gamification on Motivation in Remote Programming Education. Pint of Science Newcastle\n The role that mis/disinformation has in family relationships and conflicts in the household. NorSC Seminar Series\n Studying the Impact of Gamification on Motivation in Remote Programming Education. European Conference on e-Learning 2021."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Lauren Scott",
+    "section": "",
+    "text": "I am a PhD student in the Computer and Information Sciences Department at Northumbria University who is a member of the Northumbria Social Computing research group. I am currently conducting interdisciplinary research around misinformation and family communications, and I am also interested in research surrounding digital learning tools.\n\n\n I have recently been awarded fellowship of the Higher Education Academy (HEA).\n I recently became an Associate Chair (AC) for the DIS’24 Work in Progress and Provocations track.\n I recently gave a talk as part of the NorSC Lab Seminar Series titled: Misinformation, communication, and challenges: how technology can be used to support misinformation correction within UK family networks?"
+  },
+  {
+    "objectID": "index.html#updates",
+    "href": "index.html#updates",
+    "title": "Lauren Scott",
+    "section": "",
+    "text": "I have recently been awarded fellowship of the Higher Education Academy (HEA).\n I recently became an Associate Chair (AC) for the DIS’24 Work in Progress and Provocations track.\n I recently gave a talk as part of the NorSC Lab Seminar Series titled: Misinformation, communication, and challenges: how technology can be used to support misinformation correction within UK family networks?"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": ": Conference Paper | : Journal Article | :Workshop Paper | : Award Winning"
+  },
+  {
+    "objectID": "publications.html#section",
+    "href": "publications.html#section",
+    "title": "Publications",
+    "section": "2023",
+    "text": "2023\n Scott, L., E. Cecchinato, M., Coventry, L., Warner, M. (2023). Evaluating the Effects of Culture and Relationship Strength on Misinformation Challenging Behaviours Within the UK. In: Abdelnour Nocera, J., Kristín Lárusdóttir, M., Petrie, H., Piccinno, A., Winckler, M. (eds) Human-Computer Interaction – INTERACT 2023. INTERACT 2023. Lecture Notes in Computer Science, vol 14144. Springer, Cham.\n Scott, L., Coventry, L., Cecchinato, M.E., Warner, M. (2023) “I figured her feeling a little bit bad was worth it to not spread that kind of hate: Exploring How UK Families Discuss and Challenge Misinformation. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (pp. 1-15). Association for Computing Machinery, Hamburg, Germany, 23/04/23."
+  },
+  {
+    "objectID": "publications.html#section-1",
+    "href": "publications.html#section-1",
+    "title": "Publications",
+    "section": "2022",
+    "text": "2022\n Scott, L., Warner, M. Cecchinato, M.E. (2022) Addressing Misinformation within Family Networks. CSCW Workshop on Information-Seeking, Finding Identity: Exploring the Role of Online Health Information in Illness Experience."
+  },
+  {
+    "objectID": "publications.html#section-2",
+    "href": "publications.html#section-2",
+    "title": "Publications",
+    "section": "2021",
+    "text": "2021\n  Scott, L. & Dalton, N. (2021) Studying the Impact of Gamification on Motivation in Remote Programming Education. In Proceedings of the 20th European Conference on e-Learning: ECEL 2021. Academic Conferences International Limited, Reading, Berlin, Germany, 28/10/21. Certificate of Merit"
+  }
+]

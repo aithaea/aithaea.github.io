@@ -1,0 +1,40 @@
+---
+title: "Lauren Scott"
+image: img/Avatar.png
+toc: false
+about: 
+  template: trestles
+  image-shape: round
+  image-width: 20em
+  links:
+    - text: LinkedIn
+      icon: linkedin
+      href: https://www.linkedin.com/in/lauren-s-4255bb134/
+    - text: Twitter
+      icon: twitter
+      href: https://twitter.com/laurenscottdev
+    - text: GitHub
+      icon: github
+      href: https://github.com/aithaea
+    - text: E-mail
+      icon: envelope
+      href: mailto:lauren5.scott@northumbria.ac.uk
+---
+
+# Bio
+
+I am a PhD student in the Computer and Information Sciences Department at Northumbria University who is a member of the Northumbria Social Computing research group. I am currently conducting interdisciplinary research around misinformation and family communications, and I am also interested in research surrounding digital learning tools.
+
+## Updates
+{{< fa trophy >}} I have recently been awarded fellowship of the Higher Education Academy (HEA).
+
+{{< fa book-reader >}} I recently became an Associate Chair (AC) for the DIS'24 Work in Progress and Provocations track.
+
+{{< fa university >}} I recently gave a talk as part of the NorSC Lab Seminar Series titled: Misinformation, communication, and challenges: how technology can be used to support misinformation correction within UK family networks?
+
+
+
+
+
+
+
