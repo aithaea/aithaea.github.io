@@ -23,7 +23,7 @@ about:
 
 # Bio
 
-I am a PhD student in the Computer and Information Sciences Department at Northumbria University who is a member of the Northumbria Social Computing research group. I am currently conducting interdisciplinary research around misinformation and family communications, and I am also interested in research surrounding digital learning tools.
+I am a PhD student and Associate Lecturer in the Computer and Information Sciences Department at Northumbria University who is a member of the Northumbria Social Computing research group. I am currently conducting interdisciplinary research around misinformation and family communications, and I am also interested in research surrounding digital learning tools.
 
 ## Updates
 {{< fa trophy >}} I have recently been awarded fellowship of the Higher Education Academy (HEA).
