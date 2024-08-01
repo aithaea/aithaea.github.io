@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lfranca.uk/about.html</loc>
-    <lastmod>2024-04-24T14:55:38.527Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lfranca.uk/index.html</loc>
-    <lastmod>2024-04-24T09:06:47.680Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lfranca.uk/publications.html</loc>
-    <lastmod>2024-04-22T08:27:42.481Z</lastmod>
+    <loc>https://laurenscott.dev/about.html</loc>
+    <lastmod>2024-08-01T14:57:41.029Z</lastmod>
   </url>
   <url>
     <loc>https://laurenscott.dev/index.html</loc>
-    <lastmod>2024-04-24T09:06:47.680Z</lastmod>
+    <lastmod>2024-08-01T14:57:41.050Z</lastmod>
   </url>
   <url>
     <loc>https://laurenscott.dev/publications.html</loc>
-    <lastmod>2024-04-22T08:27:42.481Z</lastmod>
-  </url>
-  <url>
-    <loc>https://laurenscott.dev/about.html</loc>
-    <lastmod>2024-04-24T14:55:38.527Z</lastmod>
+    <lastmod>2024-08-01T14:57:41.050Z</lastmod>
   </url>
 </urlset>
