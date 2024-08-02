@@ -17,7 +17,7 @@ I am a passionate PhD student in the Computer and Information Sciences Departmen
 
 {{< fa graduation-cap >}} PhD in Computer Science - Northumbria University (Newcastle upon Tyne, UK - 2021-Current)
 
-{{< fa graduation-cap >}} PGCE Computer Science with QTS - Newcastle Unniversity (Newcastle upon Tyne, UK - 2021-Current)
+{{< fa graduation-cap >}} PGCE Computer Science with QTS - Newcastle Unniversity (Newcastle upon Tyne, UK - 2021-2022)
 
 {{< fa graduation-cap >}} MSc in Advanced Computer Science - Northumbria University (Newcastle upon Tyne, UK - 2020)
 
