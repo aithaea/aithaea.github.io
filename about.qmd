@@ -6,8 +6,9 @@ toc: true
 I am a passionate PhD student in the Computer and Information Sciences Department at Northumbria University who is a member of the Northumbria Social Computing research group and a visiting PhD researcher at University College London within the Information Security Research Group. I am currently conducting interdisciplinary research around misinformation and family communications, and I am also interested in research surrounding digital learning tools.
 
 ## Experience
+{{< fa briefcase >}} Innovation Fellow - Northumbria University (Newcastle upon Tyne, UK \| 2024 - Current)
 
-{{< fa chalkboard-teacher >}} Associate Lecturer - Computer Science - Northumbria University (Newcastle upon Tyne, UK \| 2022 - Current)
+{{< fa chalkboard-teacher >}} Associate Lecturer - Computer Science - Northumbria University (Newcastle upon Tyne, UK \| 2022 - 2024)
 
 {{< fa briefcase >}} Senior Research Assistant - Northumbria University (Newcastle upon Tyne, UK \| 2023 - 2024)
 
@@ -15,7 +16,7 @@ I am a passionate PhD student in the Computer and Information Sciences Departmen
 
 ## Education
 
-{{< fa graduation-cap >}} PhD in Computer Science - Northumbria University (Newcastle upon Tyne, UK - 2021-Current)
+{{< fa graduation-cap >}} PhD in Computer Science - Northumbria University (Newcastle upon Tyne, UK - 2021-2024)
 
 {{< fa graduation-cap >}} PGCE Computer Science with QTS - Newcastle Unniversity (Newcastle upon Tyne, UK - 2021-2022)
 
@@ -28,22 +29,26 @@ I am a passionate PhD student in the Computer and Information Sciences Departmen
 {{< fa paper-plane >}} Public/Visiting talks |
 {{< fa chalkboard-teacher >}} Conference Presentations
 
+{{< fa chalkboard-teacher >}} From Banned to Influencer? Exploring XL Bully Discourse on Social Media 
+Dec'24 - More than Human Digital Civics workshop - co-located with ACI2024
+
 {{< fa university >}} Misinformation, communication, and challenges: how technology can be used to support misinformation correction within UK family networks?
-Mar '24 NorSC Seminar Series
+Mar'24 NorSC Seminar Series
 
 {{< fa chalkboard-teacher >}} Evaluating the Effects of Culture and Relationship Strength on Misinformation Challenging Behaviours Within the UK
-INTERACT 2023 
+Aug'23 - INTERACT 2023 
 
 {{< fa chalkboard-teacher >}} "I figured her feeling a little bit bad was worth it to not spread that kind of hate": Exploring How UK Families Discuss and Challenge Misinformation.
-CHI 2023. 
+Apr'23 - CHI 2023. 
 
 {{< fa university >}} Handling misinformed family members: what do individuals do when their family are misinformed?
 CHIRP Research Talk Series
 
 {{< fa paper-plane >}} Studying the Impact of Gamification on Motivation in Remote Programming Education.
-Pint of Science Newcastle
+Sept'22 - Pint of Science Newcastle
 
 {{< fa university >}} The role that mis/disinformation has in family relationships and conflicts in the household.
-NorSC Seminar Series
+Jul'22 - NorSC Seminar Series
 
-{{< fa chalkboard-teacher >}} Studying the Impact of Gamification on Motivation in Remote Programming Education. European Conference on e-Learning 2021. 
+{{< fa chalkboard-teacher >}} Studying the Impact of Gamification on Motivation in Remote Programming Education. 
+Oct'21 - European Conference on e-Learning 2021. 
