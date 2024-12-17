@@ -3,7 +3,9 @@ title: "About"
 toc: true
 ---
 
-I am a passionate PhD student in the Computer and Information Sciences Department at Northumbria University who is a member of the Northumbria Social Computing research group and a visiting PhD researcher at University College London within the Information Security Research Group. I am currently conducting interdisciplinary research around misinformation and family communications, and I am also interested in research surrounding digital learning tools.
+I am an innovation fellow at Northumbria University, working between the DCitizens and Centre for Digital Citizens projects. My research explores vulnerable groups' understanding of misinformation, disinformation, fake news and generative AI. This is with an aim to build their skills in recognising misleading/misinforming/ai-generated content.
+
+My PhD research explored misinformation spread and correction within close-tie networks, investigating how technology could support misinformation correction when it is shared within groups of close ties (such as friend or family networks). 
 
 ## Experience
 {{< fa briefcase >}} Innovation Fellow - Northumbria University (Newcastle upon Tyne, UK \| 2024 - Current)
