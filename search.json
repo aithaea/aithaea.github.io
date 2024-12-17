@@ -4,25 +4,32 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": ": Conference Paper | : Journal Article | :Workshop Paper | : Award Winning |  Workshop Proposal\n##2024  Gowland, S., Scott, L., Handley, G., Carter, A., van der Linden, D. and Lawson, S., 2024, December. More than Human Digital Civics. In Proceedings of the International Conference on Animal-Computer Interaction (pp. 1-5)."
+    "text": ": Conference Paper | : Journal Article | :Workshop Paper | : Award Winning |  Workshop Proposal"
   },
   {
     "objectID": "publications.html#section",
     "href": "publications.html#section",
     "title": "Publications",
-    "section": "2023",
-    "text": "2023\n Scott, L., E. Cecchinato, M., Coventry, L., Warner, M. (2023). Evaluating the Effects of Culture and Relationship Strength on Misinformation Challenging Behaviours Within the UK. In: Abdelnour Nocera, J., Kristín Lárusdóttir, M., Petrie, H., Piccinno, A., Winckler, M. (eds) Human-Computer Interaction – INTERACT 2023. INTERACT 2023. Lecture Notes in Computer Science, vol 14144. Springer, Cham.\n Scott, L., Coventry, L., Cecchinato, M.E., Warner, M. (2023) “I figured her feeling a little bit bad was worth it to not spread that kind of hate: Exploring How UK Families Discuss and Challenge Misinformation. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (pp. 1-15). Association for Computing Machinery, Hamburg, Germany, 23/04/23."
+    "section": "2024",
+    "text": "2024\n Gowland, S., Scott, L., Handley, G., Carter, A., van der Linden, D. and Lawson, S., 2024, December. More than Human Digital Civics. In Proceedings of the International Conference on Animal-Computer Interaction (pp. 1-5)."
   },
   {
     "objectID": "publications.html#section-1",
     "href": "publications.html#section-1",
     "title": "Publications",
-    "section": "2022",
-    "text": "2022\n Scott, L., Warner, M. Cecchinato, M.E. (2022) Addressing Misinformation within Family Networks. CSCW Workshop on Information-Seeking, Finding Identity: Exploring the Role of Online Health Information in Illness Experience."
+    "section": "2023",
+    "text": "2023\n Scott, L., E. Cecchinato, M., Coventry, L., Warner, M. (2023). Evaluating the Effects of Culture and Relationship Strength on Misinformation Challenging Behaviours Within the UK. In: Abdelnour Nocera, J., Kristín Lárusdóttir, M., Petrie, H., Piccinno, A., Winckler, M. (eds) Human-Computer Interaction – INTERACT 2023. INTERACT 2023. Lecture Notes in Computer Science, vol 14144. Springer, Cham.\n Scott, L., Coventry, L., Cecchinato, M.E., Warner, M. (2023) “I figured her feeling a little bit bad was worth it to not spread that kind of hate: Exploring How UK Families Discuss and Challenge Misinformation. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (pp. 1-15). Association for Computing Machinery, Hamburg, Germany, 23/04/23."
   },
   {
     "objectID": "publications.html#section-2",
     "href": "publications.html#section-2",
+    "title": "Publications",
+    "section": "2022",
+    "text": "2022\n Scott, L., Warner, M. Cecchinato, M.E. (2022) Addressing Misinformation within Family Networks. CSCW Workshop on Information-Seeking, Finding Identity: Exploring the Role of Online Health Information in Illness Experience."
+  },
+  {
+    "objectID": "publications.html#section-3",
+    "href": "publications.html#section-3",
     "title": "Publications",
     "section": "2021",
     "text": "2021\n  Scott, L. & Dalton, N. (2021) Studying the Impact of Gamification on Motivation in Remote Programming Education. In Proceedings of the 20th European Conference on e-Learning: ECEL 2021. Academic Conferences International Limited, Reading, Berlin, Germany, 28/10/21. Certificate of Merit"
@@ -32,7 +39,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I am a passionate PhD student in the Computer and Information Sciences Department at Northumbria University who is a member of the Northumbria Social Computing research group and a visiting PhD researcher at University College London within the Information Security Research Group. I am currently conducting interdisciplinary research around misinformation and family communications, and I am also interested in research surrounding digital learning tools."
+    "text": "I am an innovation fellow at Northumbria University, working between the DCitizens and Centre for Digital Citizens projects. My research explores vulnerable groups’ understanding of misinformation, disinformation, fake news and generative AI. This is with an aim to build their skills in recognising misleading/misinforming/ai-generated content.\nMy PhD research explored misinformation spread and correction within close-tie networks, investigating how technology could support misinformation correction when it is shared within groups of close ties (such as friend or family networks)."
   },
   {
     "objectID": "about.html#experience",
