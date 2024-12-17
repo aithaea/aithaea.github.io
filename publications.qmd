@@ -9,7 +9,7 @@ toc: true
 {{< fa trophy >}}: Award Winning |
 {{< fa people-group >}} Workshop Proposal
 
-##2024
+## 2024
 {{< fa people-group >}} Gowland, S., **Scott, L.**, Handley, G., Carter, A., van der Linden, D. and Lawson, S., 2024, December. More than Human Digital Civics. In Proceedings of the International Conference on Animal-Computer Interaction (pp. 1-5).
 
 ## 2023
