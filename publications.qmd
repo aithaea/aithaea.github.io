@@ -9,7 +9,10 @@ toc: true
 {{< fa trophy >}}: Award Winning |
 {{< fa people-group >}} Workshop Proposal |
 {{< fa users-gear >}} Demo/Interactivity
+
+
 ## 2025
+
 {{< fa scroll >}} [Accepted/in Press] **Scott. L.**, Warner, M., Coventry, L., E. Cecchinato, M. 2025. July. Accidental spreaders: How different roles interact during misinformation discussions. In Proceedings of 22nd European Conference on Computer-Supported Cooperative Work. European Society for Embedded Technologies (EUSSET)
 
 {{< fa users-gear >}} Carter, A.R.L., Al-Shahrabi, D., Imoukhuede, W.A.P., **Scott, L.**, Jackson, D., Talhouk, R., Piedade, P., Montague, K., 2025. KaraokAI: Exploring the Potential of AI-Generated Karaoke for Academic Conferences and Research Experiences, in: Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems, CHI EA ’25. Association for Computing Machinery, New York, NY, USA. https://doi.org/10.1145/3706599.3721113
