@@ -31,6 +31,9 @@ My PhD research explored misinformation spread and correction within close-tie n
 {{< fa paper-plane >}} Public/Visiting talks |
 {{< fa chalkboard-teacher >}} Conference Presentations
 
+{{< fa paper-plane >}} Misinformation: Spread, Susceptibility and Correction
+Guest Lecture - University College London
+
 {{< fa chalkboard-teacher >}} From Banned to Influencer? Exploring XL Bully Discourse on Social Media 
 Dec'24 - More than Human Digital Civics workshop - co-located with ACI2024
 
