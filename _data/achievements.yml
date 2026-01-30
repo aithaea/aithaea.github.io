@@ -1,13 +1,18 @@
 projects:
   - title: "CyberGuardians Training"
     date: "2025-Onwards"
-    description: "This project explores older adults' understanding of key privacy and security concepts, and upskills "
+    description: "A DSIT funded project upskilling older adults in privacy, security, and misinformation resillience"
+    site-url: "https://cyberguardianstraining.co.uk"
     skills: ["HTML", "JavaScript", "Qualitative Research"]
     
-  - title: "Dog Training Report Generator"
-    date: "2024"
-    description: "Web application for generating professional training session reports"
-    skills: ["JavaScript", "PDF Generation", "UI Design"]
+    
+  - title: "RE:PLAY"
+    date: "2025-Current"
+    description: "An ESRC funded project exploring playful learning in higher education"
+    site-url: https://research.northumbria.ac.uk/replay/
+    skills: ["Qualitative Research", "Qualtrics"]
+
+
 
 work:
   - organization: "Northumbria University"
@@ -16,4 +21,9 @@ work:
     
 teaching:
   - title: "Game Design"
+    role: "Module Lead"
+
+  - title: "Human-Centred AI"
+    role: "Module Lead"
+    
     
