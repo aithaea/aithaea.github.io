@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+<section class="hero">
+    <h2>{{ site.description }}</h2>
+    <p>Creating accessible digital experiences and educational resources</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+        {% for project in site.data.achievements.projects %}
+        <article class="project-card">
+            <h3>{{ project.title }}</h3>
+            <p class="date">{{ project.date }}</p>
+            <p>{{ project.description }}</p>
+            <ul class="skills">
+                {% for skill in project.skills %}
+                <li>{{ skill }}</li>
+                {% endfor %}
+            </ul>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    {% for job in site.data.achievements.work %}
+    <article class="job">
+        <h3>{{ job.role }}</h3>
+        <p class="organization">{{ job.organization }} | {{ job.period }}</p>
+        <p>{{ job.focus }}</p>
+    </article>
+    {% endfor %}
+</section>
+
+<section id="publications">
+    <h2>Publications</h2>
+    
+    {% if site.data.publications %}
+        {% for pub in site.data.publications %}
+        <article class="publication">
+            <h3>{{ pub.title }}</h3>
+            <p class="authors">{{ pub.authors }}</p>
+            <p class="venue-year">
+                <span class="venue">{{ pub.venue }}</span>
+                {% if pub.year != 'N/A' %}
+                <span class="year">({{ pub.year }})</span>
+                {% endif %}
+            </p>
+            
+            {% if pub.citations > 0 %}
+            <p class="citations">📊 {{ pub.citations }} citations</p>
+            {% endif %}
+            
+            <div class="pub-links">
+                {% if pub.url %}
+                <a href="{{ pub.url }}" target="_blank" rel="noopener">View Paper</a>
+                {% endif %}
+                {% if pub.scholar_url %}
+                <a href="https://scholar.google.com{{ pub.scholar_url }}" target="_blank" rel="noopener">Google Scholar</a>
+                {% endif %}
+            </div>
+        </article>
+        {% endfor %}
+    {% else %}
+        <p>Publications loading...</p>
+    {% endif %}
+</section>

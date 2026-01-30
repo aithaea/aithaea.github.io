@@ -1,0 +1,171 @@
+/* Your own custom design - completely up to you! */
+:root {
+    --primary: #2c3e50;
+    --accent: #3498db;
+    --text: #333;
+    --bg: #fff;
+    --light-bg: #f8f9fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+section {
+    margin: 4rem 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent);
+}
+
+.project-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.date {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.skills li {
+    background: var(--accent);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.job {
+    margin-bottom: 2rem;
+}
+
+.organization {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background: var(--light-bg);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+.publication {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent);
+}
+
+.publication h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.authors {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+.venue-year {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.citations {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.pub-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.pub-links a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.pub-links a:hover {
+    text-decoration: underline;
+}

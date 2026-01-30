@@ -1,0 +1,19 @@
+projects:
+  - title: "CyberGuardians Training"
+    date: "2025-Onwards"
+    description: "This project explores older adults' understanding of key privacy and security concepts, and upskills "
+    skills: ["HTML", "JavaScript", "Qualitative Research"]
+    
+  - title: "Dog Training Report Generator"
+    date: "2024"
+    description: "Web application for generating professional training session reports"
+    skills: ["JavaScript", "PDF Generation", "UI Design"]
+
+work:
+  - organization: "Northumbria University"
+    role: "Lecturer"
+    period: "2025 - Present"
+    
+teaching:
+  - title: "Game Design"
+    
