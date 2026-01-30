@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * 0'  # Weekly on Sunday at midnight
   workflow_dispatch:  # Allow manual trigger from Actions tab
 
+permissions:
+  contents: write  # This gives the action permission to push
+
 jobs:
   update-publications:
     runs-on: ubuntu-latest
