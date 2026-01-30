@@ -1,6 +1,7 @@
 import requests
 import yaml
 import os
+import time
 
 # Your ORCID ID
 ORCID_ID = '0000-0002-4395-7510'
@@ -8,6 +9,21 @@ ORCID_ID = '0000-0002-4395-7510'
 headers = {
     'Accept': 'application/json'
 }
+
+def get_crossref_metadata(doi):
+    """Fetch metadata from CrossRef using DOI"""
+    try:
+        crossref_url = f"https://api.crossref.org/works/{doi}"
+        response = requests.get(crossref_url)
+        if response.status_code == 200:
+            data = response.json()['message']
+            return {
+                'venue': data.get('container-title', [''])[0] or data.get('publisher', ''),
+                'type': data.get('type', '')
+            }
+    except:
+        pass
+    return None
 
 try:
     # Fetch works from ORCID
@@ -23,49 +39,75 @@ try:
     
     for group in data.get('group', []):
         work_summary = group['work-summary'][0]
+        put_code = work_summary.get('put-code')
         
-        # Extract title
-        title_obj = work_summary.get('title', {})
-        title = title_obj.get('title', {}).get('value', 'Untitled') if title_obj else 'Untitled'
+        # Fetch detailed work information
+        detail_url = f'https://pub.orcid.org/v3.0/{ORCID_ID}/work/{put_code}'
+        detail_response = requests.get(detail_url, headers=headers)
         
-        # Extract year
-        pub_date = work_summary.get('publication-date')
-        year = pub_date.get('year', {}).get('value', 'N/A') if pub_date else 'N/A'
-        
-        # Extract journal/venue
-        journal = work_summary.get('journal-title')
-        venue = journal.get('value', 'N/A') if journal else 'N/A'
-        
-        # Extract external IDs (DOI, etc.)
-        external_ids = work_summary.get('external-ids', {}).get('external-id', [])
-        doi = None
-        url_link = None
-        
-        for ext_id in external_ids:
-            if ext_id.get('external-id-type') == 'doi':
-                doi = ext_id.get('external-id-value')
-                url_link = f"https://doi.org/{doi}"
-                break
-        
-        publications.append({
-            'title': title,
-            'year': year,
-            'venue': venue,
-            'doi': doi if doi else '',
-            'url': url_link if url_link else ''
-        })
+        if detail_response.status_code == 200:
+            work_detail = detail_response.json()
+            
+            # Extract title
+            title_obj = work_detail.get('title', {})
+            title = title_obj.get('title', {}).get('value', 'Untitled') if title_obj else 'Untitled'
+            
+            # Extract year
+            pub_date = work_detail.get('publication-date')
+            year = pub_date.get('year', {}).get('value', 'N/A') if pub_date else 'N/A'
+            
+            # Extract venue from ORCID
+            journal = work_detail.get('journal-title')
+            venue = journal.get('value', '') if journal else ''
+            
+            # Extract contributors
+            contributors = work_detail.get('contributors', {}).get('contributor', [])
+            authors = []
+            for contributor in contributors:
+                credit_name = contributor.get('credit-name')
+                if credit_name:
+                    authors.append(credit_name.get('value', ''))
+            authors_str = ', '.join(authors) if authors else 'Unknown'
+            
+            # Extract DOI
+            external_ids = work_detail.get('external-ids', {}).get('external-id', [])
+            doi = None
+            url_link = None
+            
+            for ext_id in external_ids:
+                if ext_id.get('external-id-type') == 'doi':
+                    doi = ext_id.get('external-id-value')
+                    url_link = f"https://doi.org/{doi}"
+                    break
+            
+            # If venue is missing or unclear, try CrossRef
+            if doi and (not venue or venue == 'N/A'):
+                print(f"Fetching venue from CrossRef for: {title[:50]}...")
+                crossref_data = get_crossref_metadata(doi)
+                if crossref_data and crossref_data['venue']:
+                    venue = crossref_data['venue']
+                time.sleep(0.2)  # Be nice to CrossRef API
+            
+            publications.append({
+                'title': title,
+                'authors': authors_str,
+                'year': year,
+                'venue': venue if venue else 'N/A',
+                'doi': doi if doi else '',
+                'url': url_link if url_link else ''
+            })
+            
+            time.sleep(0.1)
     
-    # Sort by year (most recent first)
+    # Sort by year
     publications.sort(key=lambda x: str(x['year']), reverse=True)
     
-    # Ensure _data directory exists
     os.makedirs('_data', exist_ok=True)
     
-    # Save to YAML
     with open('_data/publications.yml', 'w', encoding='utf-8') as f:
         yaml.dump(publications, f, allow_unicode=True, sort_keys=False)
     
-    print(f"Successfully fetched {len(publications)} publications from ORCID")
+    print(f"Successfully fetched {len(publications)} publications")
     
 except Exception as e:
     print(f"Error: {e}")
