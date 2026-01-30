@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://laurenscott.dev/about.html</loc>
+    <lastmod>2026-01-30T20:12:01.940Z</lastmod>
+  </url>
+  <url>
     <loc>https://laurenscott.dev/index.html</loc>
-    <lastmod>2025-04-24T08:37:54.224Z</lastmod>
+    <lastmod>2026-01-30T20:12:01.951Z</lastmod>
   </url>
   <url>
     <loc>https://laurenscott.dev/publications.html</loc>
-    <lastmod>2025-04-24T08:37:54.224Z</lastmod>
-  </url>
-  <url>
-    <loc>https://laurenscott.dev/about.html</loc>
-    <lastmod>2025-04-24T08:37:54.213Z</lastmod>
+    <lastmod>2026-01-30T20:12:01.952Z</lastmod>
   </url>
 </urlset>
