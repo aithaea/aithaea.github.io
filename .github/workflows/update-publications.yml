@@ -1,4 +1,4 @@
-name: Update Publications from Google Scholar
+name: Update Publications from ORCID
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:  # Allow manual trigger from Actions tab
 
 permissions:
-  contents: write  # This gives the action permission to push
+  contents: write
 
 jobs:
   update-publications:
@@ -23,9 +23,9 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install scholarly pyyaml
+          pip install requests pyyaml
       
-      - name: Fetch publications
+      - name: Fetch publications from ORCID
         run: python fetch_publications.py
       
       - name: Commit and push if changed
@@ -33,4 +33,4 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add _data/publications.yml
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update publications from Google Scholar" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update publications from ORCID" && git push)
