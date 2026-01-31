@@ -51,17 +51,12 @@ layout: default
                 <span class="year">({{ pub.year }})</span>
                 {% endif %}
             </p>
-            
-            {% if pub.citations > 0 %}
-            <p class="citations">📊 {{ pub.citations }} citations</p>
-            {% endif %}
-            
             <div class="pub-links">
                 {% if pub.url %}
                 <a href="{{ pub.url }}" target="_blank" rel="noopener">View Paper</a>
                 {% endif %}
-                {% if pub.scholar_url %}
-                <a href="https://scholar.google.com{{ pub.scholar_url }}" target="_blank" rel="noopener">Google Scholar</a>
+                {% if pub.doi %}
+                <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI</a>
                 {% endif %}
             </div>
         </article>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maze Mask Collector</title>
+    <title>A-maze-ing Mask Mayhem</title>
     <style>
         * {
             margin: 0;
@@ -307,7 +307,7 @@
 </head>
 <body class="dark-mode">
     <div class="container">
-        <h1>Maze Mask Collector</h1>
+        <h1>A-maze-ing Mask Mayhem</h1>
         
         <div class="info-bar">
             <div class="game-stats">
@@ -346,6 +346,29 @@
         </div>
     </div>
 
+    <!-- Start Modal -->
+    <div class="modal show" id="startModal">
+        <div class="modal-content">
+            <div class="modal-title">A-maze-ing Mask Mayhem</div>
+            <div class="modal-message" style="text-align: left; line-height: 1.8;">
+                <p style="text-align: center; font-weight: bold; margin-bottom: 10px;">🎮 How to Play</p>
+                <p><strong>Goal:</strong> Collect all masks (🎭) then reach the exit (🚪) before time runs out!</p>
+                <br>
+                <p><strong>Controls:</strong></p>
+                <p>🖱️ Desktop: Arrow keys or WASD</p>
+                <p>📱 Mobile: Swipe to move</p>
+                <br>
+                <p><strong>Rules:</strong></p>
+                <p>🎭 Collect masks: +10 seconds</p>
+                <p>👻 Hit enemies: -10 seconds</p>
+                <p>🌋 Avoid the lava - it spreads!</p>
+                <p>🚪 Exit opens when all masks collected</p>
+                <p>⏱️ Beat the timer!</p>
+            </div>
+            <button class="modal-button" id="startButton">Start Game</button>
+        </div>
+    </div>
+
     <script>
         let currentLevel = 1;
         let maze = [];
@@ -364,6 +387,21 @@
         let lavaInterval = null;
         let lavaCells = [];
         let lavaActive = false;
+        let audioStarted = false;
+        let playerOnLava = false;
+        let gameStarted = false;
+
+        // Create audio elements
+        const backgroundMusic = new Audio();
+        backgroundMusic.src = 'game_sounds/Soundtrack.mp3';
+        backgroundMusic.loop = true;
+        backgroundMusic.volume = 0.5; // 50% volume, adjust as needed
+
+        const enemySound = new Audio('game_sounds/EnemyDamage.wav');
+        const lavaSound = new Audio('game_sounds/LavaDamage.wav');
+        const maskSound = new Audio('game_sounds/MaskDing.mp3');
+        const winnerSound = new Audio('game_sounds/winner.mp3');
+        const loserSound = new Audio('game_sounds/loser.wav');
 
         const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d');
@@ -377,6 +415,8 @@
         const modalTitle = document.getElementById('modalTitle');
         const modalMessage = document.getElementById('modalMessage');
         const modalButton = document.getElementById('modalButton');
+        const startModal = document.getElementById('startModal');
+        const startButton = document.getElementById('startButton');
 
         // Theme colors
         const themes = {
@@ -398,9 +438,11 @@
         function getDifficulty(level) {
             const baseGridSize = 10;
             const baseMasks = 3;
+            const baseTime = 60; // 1 minute for level 1
             return {
                 gridSize: Math.min(baseGridSize + (level - 1) * 2, 25), // Max 25x25
-                masks: Math.min(baseMasks + (level - 1), 10) // Max 10 masks
+                masks: Math.min(baseMasks + (level - 1), 10), // Max 10 masks
+                time: baseTime + (level - 1) * 20 // +20 seconds per level
             };
         }
 
@@ -504,11 +546,24 @@
 
             lavaCells = newLavaCells;
             
+            // Remove enemies caught in lava
+            enemies = enemies.filter(enemy => 
+                !lavaCells.some(l => l.x === enemy.x && l.y === enemy.y)
+            );
+            
             // Check if player is caught in lava
             if (lavaCells.some(l => l.x === player.x && l.y === player.y)) {
                 gameActive = false;
                 stopTimer();
                 stopLava();
+                backgroundMusic.pause();
+                // Play lava damage sound first, then loser sound after delay
+                lavaSound.currentTime = 0;
+                lavaSound.play().catch(e => console.log('Lava sound failed:', e));
+                setTimeout(() => {
+                    loserSound.currentTime = 0;
+                    loserSound.play().catch(e => console.log('Loser sound failed:', e));
+                }, 800); // 800ms delay to let lava sound play first
                 modalTitle.textContent = '🌋 Caught by Lava!';
                 modalMessage.textContent = `The lava caught you on Level ${currentLevel}!`;
                 modalButton.textContent = 'Try Again';
@@ -524,6 +579,10 @@
             gameActive = false;
             stopTimer();
             stopLava();
+            backgroundMusic.pause();
+            // Play loser sound
+            loserSound.currentTime = 0;
+            loserSound.play().catch(e => console.log('Loser sound failed:', e));
             modalTitle.textContent = '⏰ Time\'s Up!';
             modalMessage.textContent = `You ran out of time on Level ${currentLevel}. Try again!`;
             modalButton.textContent = 'Restart Game';
@@ -639,10 +698,12 @@
             masks = placeMasks();
             enemies = placeEnemies();
             collectedMasks = 0;
-            timeLeft = 120;
-            gameActive = true;
+            timeLeft = difficulty.time;
+            gameActive = false; // Don't start active until start button pressed (for level 1)
             lavaActive = false;
             lavaCells = [];
+            audioStarted = false;
+            playerOnLava = false;
             
             levelCounter.textContent = currentLevel;
             maskCounter.textContent = '0';
@@ -651,8 +712,25 @@
             timerDisplay.classList.remove('warning', 'danger');
             
             stopLava();
-            startTimer();
+            
+            // If level 1 and game hasn't started, show start modal
+            if (level === 1 && !gameStarted) {
+                startModal.classList.add('show');
+            } else {
+                // For subsequent levels, start immediately
+                gameActive = true;
+                startTimer();
+            }
+            
             drawMaze();
+        }
+
+        // Start the game (from start button)
+        function startGame() {
+            gameStarted = true;
+            gameActive = true;
+            startModal.classList.remove('show');
+            startTimer();
         }
 
         // Check for mask collection
@@ -665,6 +743,9 @@
                 // Add 10 seconds for collecting a mask
                 timeLeft += 10;
                 timerDisplay.textContent = formatTime(timeLeft);
+                // Play mask collection sound
+                maskSound.currentTime = 0;
+                maskSound.play().catch(e => console.log('Mask sound failed:', e));
             }
         }
 
@@ -677,6 +758,9 @@
                 // Lose 10 seconds
                 timeLeft = Math.max(0, timeLeft - 10);
                 timerDisplay.textContent = formatTime(timeLeft);
+                // Play enemy damage sound
+                enemySound.currentTime = 0;
+                enemySound.play().catch(e => console.log('Enemy sound failed:', e));
                 
                 // Check if time ran out
                 if (timeLeft <= 0) {
@@ -685,12 +769,87 @@
             }
         }
 
-        // Check if reached exit
+        // Move all enemies
+        function moveEnemies() {
+            enemies.forEach(enemy => {
+                // Check if enemy is adjacent to player - if so, freeze it
+                const isAdjacent = 
+                    (Math.abs(enemy.x - player.x) === 1 && enemy.y === player.y) ||
+                    (Math.abs(enemy.y - player.y) === 1 && enemy.x === player.x);
+                
+                if (isAdjacent) {
+                    return; // Don't move if adjacent to player
+                }
+
+                const cell = maze[enemy.y][enemy.x];
+                const validMoves = [];
+
+                // Check all four directions
+                const directions = [
+                    { dx: 0, dy: -1, wall: 'top' },
+                    { dx: 1, dy: 0, wall: 'right' },
+                    { dx: 0, dy: 1, wall: 'bottom' },
+                    { dx: -1, dy: 0, wall: 'left' }
+                ];
+
+                directions.forEach(dir => {
+                    const newX = enemy.x + dir.dx;
+                    const newY = enemy.y + dir.dy;
+
+                    // Check if move is valid (within bounds, no wall)
+                    if (newX >= 0 && newX < gridSize && 
+                        newY >= 0 && newY < gridSize && 
+                        !cell.walls[dir.wall]) {
+                        
+                        // Calculate distance to player for this move
+                        const distance = Math.abs(newX - player.x) + Math.abs(newY - player.y);
+                        validMoves.push({ x: newX, y: newY, distance: distance });
+                    }
+                });
+
+                // Move towards player (choose move with smallest distance to player)
+                if (validMoves.length > 0) {
+                    validMoves.sort((a, b) => a.distance - b.distance);
+                    const bestMove = validMoves[0];
+                    enemy.x = bestMove.x;
+                    enemy.y = bestMove.y;
+                }
+                // If no valid moves, enemy stays in place
+            });
+
+            // Check for collision after enemies move
+            checkEnemyCollision();
+        }
+
+        // Get player emoji based on time and conditions
+        function getPlayerEmoji() {
+            // Check if player is on lava
+            if (playerOnLava) {
+                return '🥵';
+            }
+            
+            // Based on time remaining
+            if (timeLeft > 120) {
+                return '😏';
+            } else if (timeLeft > 90) {
+                return '😕';
+            } else if (timeLeft > 60) {
+                return '😬';
+            } else if (timeLeft > 30) {
+                return '😨';
+            } else {
+                return '😱';
+            }
+        }
         function checkExit() {
             if (player.x === exit.x && player.y === exit.y && collectedMasks === totalMasks) {
                 gameActive = false;
                 stopTimer();
                 stopLava();
+                backgroundMusic.pause();
+                // Play winner sound
+                winnerSound.currentTime = 0;
+                winnerSound.play().catch(e => console.log('Winner sound failed:', e));
                 modalTitle.textContent = '🎉 Level Complete!';
                 modalMessage.textContent = `Congratulations! You completed Level ${currentLevel} with ${formatTime(timeLeft)} remaining!`;
                 modalButton.textContent = 'Next Level';
@@ -701,7 +860,7 @@
 
         // Move player
         function movePlayer(dx, dy) {
-            if (!gameActive) return;
+            if (!gameActive || playerOnLava) return;
 
             const newX = player.x + dx;
             const newY = player.y + dy;
@@ -719,12 +878,28 @@
             player.x = newX;
             player.y = newY;
             
+            // Check if player stepped on lava
+            if (lavaCells.some(l => l.x === player.x && l.y === player.y)) {
+                playerOnLava = true;
+            }
+            
+            // Start music on first move
+            if (!audioStarted) {
+                backgroundMusic.play().catch(e => console.log('Audio play failed:', e));
+                audioStarted = true;
+            }
+            
+            // Check if player moved into an enemy
+            checkEnemyCollision();
+            
             // Start lava after first move
             if (!lavaActive) {
                 startLava();
             }
             
-            checkEnemyCollision();
+            // Move enemies after player moves
+            moveEnemies();
+            
             checkMaskCollection();
             checkExit();
             drawMaze();
@@ -809,16 +984,11 @@
             });
 
             // Draw player
-            ctx.fillStyle = theme.player;
-            ctx.beginPath();
-            ctx.arc(
-                player.x * cellSize + cellSize / 2,
-                player.y * cellSize + cellSize / 2,
-                cellSize * 0.35,
-                0,
-                Math.PI * 2
-            );
-            ctx.fill();
+            const playerEmoji = getPlayerEmoji();
+            ctx.font = `${cellSize * 0.7}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(playerEmoji, player.x * cellSize + cellSize / 2, player.y * cellSize + cellSize / 2);
         }
 
         // Keyboard controls
@@ -884,8 +1054,13 @@
         });
 
         // Button event listeners
+        startButton.addEventListener('click', startGame);
+
         resetBtn.addEventListener('click', () => {
             stopTimer();
+            backgroundMusic.pause();
+            backgroundMusic.currentTime = 0;
+            gameStarted = false;
             initGame(1);
         });
 
@@ -894,6 +1069,8 @@
         modalButton.addEventListener('click', () => {
             modal.classList.remove('show');
             if (modalButton.classList.contains('game-over')) {
+                backgroundMusic.currentTime = 0;
+                gameStarted = false;
                 initGame(1);
             } else {
                 initGame(currentLevel + 1);
