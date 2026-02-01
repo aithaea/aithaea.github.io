@@ -169,3 +169,225 @@ footer {
 .pub-links a:hover {
     text-decoration: underline;
 }
+
+/* Timeline Section */
+#game-jam-timeline {
+    padding: 4rem 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline-intro {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+/* Timeline Structure */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+/* Vertical line */
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 80px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--accent), var(--primary));
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Timeline Marker (Year) */
+.timeline-marker {
+    position: relative;
+    flex-shrink: 0;
+    width: 160px;
+    text-align: center;
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background: var(--accent);
+    border: 4px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 71px;
+    top: 2rem;
+    box-shadow: 0 0 0 3px var(--accent);
+    z-index: 2;
+}
+
+.timeline-year {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary);
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+
+/* Game Jam Card */
+.timeline-content {
+    flex: 1;
+}
+
+.game-jam-card {
+    background: var(--light-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    border-left: 4px solid var(--accent);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-jam-card:hover {
+    transform: translateX(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+.game-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #e0e0e0;
+}
+
+.game-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-details {
+    padding: 2rem;
+}
+
+.jam-theme {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.game-jam-card h3 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contributors {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.description {
+    line-height: 1.6;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+}
+
+.game-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+    .timeline:before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .timeline-marker {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .timeline-dot {
+        position: static;
+        left: auto;
+    }
+    
+    .timeline-year {
+        font-size: 1.5rem;
+    }
+    
+    .game-jam-card:hover {
+        transform: translateY(-4px);
+    }
+    
+    .game-image {
+        height: 200px;
+    }
+}
+
+/* Other Projects Section */
+#other-projects {
+    padding: 4rem 0;
+    border-top: 2px solid var(--light-bg);
+    margin-top: 4rem;
+}
+
+.project-list {
+    margin-top: 3rem;
+}
+
+.project-list h3 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.project-list-item {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--light-bg);
+}
+
+.project-list-item:last-child {
+    border-bottom: none;
+}
+
+.project-list-item h4 {
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+}
+
+.project-list-item .project-type {
+    background: transparent;
+    color: #666;
+    padding: 0;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}

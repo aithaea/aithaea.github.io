@@ -1,0 +1,83 @@
+# Game Development Projects - Game Jam Timeline
+game_jams:
+  - year: 2026
+    title: "A-maze-ing Mask Mayhem"
+    event: "Global Game Jam 2026"
+    theme: "Masks"
+    contributors: "Lauren Scott"
+    description: "A cross-platform browser maze-based game programmed in JS, HTML, and CSS; A-maze-ing Mask Mayhem is a race against the clock to collect all of the masks and exit the maze before the lava catches you!"
+    tech: ["JavaScript", "HTML", "CSS"]
+    image: "assets/masks.png"
+    links:
+      play: "https://laurenscott.dev/mask.html"
+      ggj: "https://globalgamejam.org/games/2026/maze-ing-mask-mayhem-8"
+    featured: true
+    
+  - year: 2025
+    title: "Bubble Tea Club (The Challenge)"
+    event: "Global Game Jam 2025"
+    theme: "Bubbles"
+    contributors: "Lauren Scott, Simon Crabbé"
+    description: "Programmed in Java, this cozy cafe simulator lets you live out your bubble tea dreams. With many flavours, and a time crunch, you need to race to make bubble tea before the timer runs out."
+    tech: ["Java"]
+    image: "assets/BTC.png"
+    links:
+      ggj: "https://globalgamejam.org/games/2025/bubble-tea-club-challenge-0"
+      github: "https://github.com/aithaea/GGJ2025"
+    featured: true
+    
+  - year: 2024
+    title: "Clownin' Around"
+    event: "Global Game Jam 2024"
+    theme: "Make me laugh"
+    contributors: "Lauren Scott, Simon Crabbé"
+    description: "A simple shooter game where clowns roam the lands, after collecting a box o' pies, you can throw pies at the creepy clowns to make them laugh and dance rather than creep and roam."
+    tech: ["Unreal Engine", "Blender"]
+    image: "assets/clown.png"
+    links:
+      ggj: "https://globalgamejam.org/games/2024/clownin-around-7"
+    featured: true
+    
+  - year: 2023
+    title: "Battle of the Birches"
+    event: "Global Game Jam 2023"
+    theme: "Roots"
+    contributors: "Lauren Scott, Hanna Haigh, Aaron Drew, Simon Crabbé"
+    description: "A card game (with tabletop simulator extension) where two trees battle it out to take over the roots of the nearby fertile land. You will need one dice, some tokens and a printer to print cards, or a copy of tabletop simulator."
+    tech: ["Procreate", "Tabletop Simulator"]
+    image: "assets/birches.png"
+    links:
+      ggj: "https://v3.globalgamejam.org/2023/games/battle-birches-0"
+      steam: "https://steamcommunity.com/sharedfiles/filedetails/?id=2929036140"
+    featured: true
+    
+  - year: 2022
+    title: "RULE"
+    event: "Global Game Jam 2022"
+    theme: "Duality"
+    contributors: "Lauren Scott, Simon Crabbé, Laura-Elizabeth Howes, Sean Peacock"
+    description: "Based on classic JRPGs, built using RPG builder, this game explores the classic themes of good and evil, from multiple perspectives. This game investigates the duality in the nature of decision making, and the difference between moral correctness and objective correctness."
+    tech: ["RPG Builder"]
+    image: "assets/rule.png"
+    links:
+      ggj: "https://v3.globalgamejam.org/2022/games/rule-9"
+    featured: true
+
+# Other Development Projects
+other_projects:
+    
+  - title: "Dog Training Report Generator"
+    date: "2026"
+    type: "Client Project"
+    description: "Professional web application that generates customized PDF training reports with session notes, training strategies, and progress tracking for dog training businesses"
+    tech: ["JavaScript", "PDF Generation", "Form Design", "Print Styling"]
+    client: "Distinguished Dog Training"
+    featured: true
+    
+  - title: "Automated Portfolio with ORCID Integration"
+    date: "2026"
+    type: "Personal Project"
+    description: "Self-updating portfolio website using Jekyll and GitHub Pages that automatically pulls publications from ORCID and CrossRef APIs, eliminating manual updates"
+    tech: ["Jekyll", "GitHub Actions", "Python", "APIs", "YAML"]
+    github: "https://github.com/aithaea/aithaea.github.io"
+    featured: false
