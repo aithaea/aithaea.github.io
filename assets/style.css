@@ -391,3 +391,274 @@ footer {
     display: block;
     margin-bottom: 0.5rem;
 }
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 6rem 2rem 4rem;
+    background: linear-gradient(135deg, var(--light-bg) 0%, #fff 100%);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.bio {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.hero-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.hero-links a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero-links a:hover {
+    text-decoration: underline;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Quick Links */
+.quick-links {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.quick-link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.quick-link-card {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    border-left: 4px solid var(--accent);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.quick-link-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.quick-link-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.quick-link-card p {
+    color: #666;
+}
+
+/* About Page */
+.about-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.bio-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* Experience Section */
+.experience-item {
+    background: var(--light-bg);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience-item h3 {
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+}
+
+.organization {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.experience-meta {
+    text-align: right;
+}
+
+.period, .location {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.description {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.highlights {
+    list-style: none;
+    padding-left: 0;
+}
+
+.highlights li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.highlights li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+/* Research Projects */
+.research-project {
+    background: var(--light-bg);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent);
+}
+
+.research-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.research-project h3 {
+    color: var(--primary);
+    margin: 0;
+}
+
+.status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.status-ongoing {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.collaborators {
+    color: #666;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+/* Project Type Badge */
+.project-type {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Project List (non-featured) */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project-list-item {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-bg);
+}
+
+.project-list-item:last-child {
+    border-bottom: none;
+}
+
+.project-list-item h3 {
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+}
+
+.project-list-item .project-type {
+    background: transparent;
+    color: #666;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1.2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .experience-header {
+        flex-direction: column;
+    }
+    
+    .experience-meta {
+        text-align: left;
+    }
+}

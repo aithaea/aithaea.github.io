@@ -1,0 +1,120 @@
+---
+layout: default
+title: Fun Projects
+---
+
+<section class="page-header">
+    <h1>Fun Projects</h1>
+    <p>Game development, web applications, and interactive experiences</p>
+</section>
+
+<section id="game-jam-timeline">
+    <h2>Game Jam Journey</h2>
+    <p class="timeline-intro">My progression through the Global Game Jam community over the years</p>
+    
+    <div class="timeline">
+        {% for jam in site.data.projects.game_jams %}
+        <div class="timeline-item">
+            <div class="timeline-marker">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">{{ jam.year }}</div>
+            </div>
+            
+            <div class="timeline-content">
+                <article class="game-jam-card">
+                    {% if jam.image %}
+                    <div class="game-image">
+                        <img src="{{ jam.image }}" alt="{{ jam.title }}">
+                    </div>
+                    {% endif %}
+                    
+                    <div class="game-details">
+                        <span class="jam-theme">Theme: {{ jam.theme }}</span>
+                        <h3>{{ jam.title }}</h3>
+                        <p class="contributors">{{ jam.contributors }}</p>
+                        <p class="description">{{ jam.description }}</p>
+                        
+                        {% if jam.tech %}
+                        <ul class="tech-stack">
+                            {% for tech in jam.tech %}
+                            <li>{{ tech }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                        
+                        <div class="game-links">
+                            {% if jam.links.play %}
+                            <a href="{{ jam.links.play }}" target="_blank" rel="noopener" class="btn-primary">Play Game</a>
+                            {% endif %}
+                            {% if jam.links.ggj %}
+                            <a href="{{ jam.links.ggj }}" target="_blank" rel="noopener" class="btn-secondary">GGJ Page</a>
+                            {% endif %}
+                            {% if jam.links.github %}
+                            <a href="{{ jam.links.github }}" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
+                            {% endif %}
+                            {% if jam.links.steam %}
+                            <a href="{{ jam.links.steam }}" target="_blank" rel="noopener" class="btn-secondary">Steam Workshop</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="other-projects">
+    <h2>Other Development Projects</h2>
+    
+    <div class="project-grid">
+        {% for project in site.data.projects.other_projects %}
+        {% if project.featured %}
+        <article class="project-card">
+            <div class="project-content">
+                <span class="project-type">{{ project.type }}</span>
+                <h3>{{ project.title }}</h3>
+                <p class="project-date">{{ project.date }}</p>
+                
+                {% if project.client %}
+                <p class="project-client">Client: {{ project.client }}</p>
+                {% endif %}
+                
+                <p class="project-description">{{ project.description }}</p>
+                
+                {% if project.tech %}
+                <ul class="tech-stack">
+                    {% for tech in project.tech %}
+                    <li>{{ tech }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                
+                <div class="project-links">
+                    {% if project.url %}
+                    <a href="{{ project.url }}" target="_blank" rel="noopener" class="btn-primary">View Project</a>
+                    {% endif %}
+                    {% if project.github %}
+                    <a href="{{ project.github }}" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
+                    {% endif %}
+                </div>
+            </div>
+        </article>
+        {% endif %}
+        {% endfor %}
+    </div>
+    
+    {% assign non_featured = site.data.projects.other_projects | where: "featured", false %}
+    {% if non_featured.size > 0 %}
+    <div class="project-list">
+        <h3>Additional Projects</h3>
+        {% for project in non_featured %}
+        <article class="project-list-item">
+            <h4>{{ project.title }}</h4>
+            <p class="project-type">{{ project.type }} • {{ project.date }}</p>
+            <p>{{ project.description }}</p>
+        </article>
+        {% endfor %}
+    </div>
+    {% endif %}
+</section>

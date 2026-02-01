@@ -18,6 +18,14 @@ work:
   - organization: "Northumbria University"
     role: "Lecturer"
     period: "2025 - Present"
+
+  - organization: "Northumbria University"
+    role: "Research Fellow"
+    period: "2025"
+
+  - organization: "Northumbria University"
+    role: "Innovation Fellow"
+    period: "2024-2025"    
     
 teaching:
   - title: "Game Design"
