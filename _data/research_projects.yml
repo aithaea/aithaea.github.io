@@ -1,0 +1,116 @@
+# Current Research Projects
+current_projects:
+  - title: "RE:PLAY"
+    subtitle: "Exploring playful approaches to higher education"
+    period: "2025 - Current"
+    role: "Co-Investigator"
+    funding: "ESRC"
+    description: "A super exciting project looking at playful learning approaches for higher education."
+    links:
+      website: "https://research.northumbria.ac.uk/replay/"
+    
+  - title: "CyberGuardians Training"
+    subtitle: "Reducing older adults' vulnerabilities in relation to security threats, privacy issues, recognising generative AI content, and spotting mis/disinformation"
+    period: "2025 - Current"
+    role: "Co-Investigator"
+    funding: "DSIT"
+    project_name: "Improving Older Adults' Digital Skills Through Peer-to-peer Networks"
+    description: "Working to improve digital literacy and safety awareness for older adults through peer-to-peer educational networks."
+    links:
+      website: "https://cyberguardianstraining.co.uk"
+    
+  - title: "Hopeful Futures AI"
+    period: "2025 - Current"
+    role: "Researcher"
+    description: "AI4ALL – a national challenge for secondary-age students, creating travel brochures for a visit to the future where AI has performed social good."
+    links:
+      website: "https://hopefulfutures.ai/"
+    
+  - title: "Playful AI Literacy"
+    subtitle: "Integrating Playful AI Literacy Learning Activities In Schools Through Third-sector And Public-sector Organisations"
+    period: "2026 - Current"
+    role: "Co-Investigator"
+    funding: "RAI"
+    description: "Exploring how AI literacy can be improved and delivered to school-age children through playful learning approaches."
+
+# Past Research Projects
+past_projects:
+  - title: "Speculative Urban Futures"
+    subtitle: "Exploring how technology can be used to track misinformation spread and prompt correction of misinformation in urban environments"
+    period: "2024 - 2025"
+    role: "Co-PI"
+    funding: "Urban Futures Seedcorn"
+    team: "Dr Lauren Scott, Dr Reem Talhouk, David Clark"
+    description: "Speculative design project exploring how misinformation could be tracked and corrected through urban technologies. Included design workshops followed by qualitative survey to explore potential future technology."
+    status: "Results being prepared for publication"
+    links:
+      funder: "https://www.northumbria.ac.uk/research/idrts/urban-futures/"
+    
+  - title: "Misinformation and GenAI Literacy for Young Refugees and Asylum Seekers"
+    subtitle: "Increasing young refugees and asylum seekers' capabilities in using AI responsibly, spotting AI generated content, and recognising false information they encounter online"
+    period: "2024 - 2025"
+    role: "Co-Investigator"
+    funding: "RAI Skills Pillar"
+    team: "Dr Reem Talhouk (PI), Dr Jamie Mahoney, Prof Kyle Montague, Dr Lauren Scott, William Imoukhuede, Dr Ana Pires, Dr Sarah Rüller, Bridget Stratford MBE"
+    description: "Worked with Action Foundation to increase young refugees and asylum seekers' digital literacy skills, with focus on AI literacy and misinformation recognition."
+    status: "Resources and results being prepared for publication"
+    links:
+      project: "https://rai.ac.uk/new_projects/misinformation-disinformation-and-generative-ai-building-young-refugees-skills-and-capacities-2/"
+    
+  - title: "Defining/Describing False Information Types"
+    subtitle: "Exploring how members of the public define/describe false information types"
+    period: "2024 - 2025"
+    role: "Project Lead"
+    position: "Innovation Fellow"
+    team: "Dr Lauren Scott, Dr Kyle Montague, Dr Mark Warner, Dr Marta E. Cecchinato"
+    description: "Led a project exploring how non-academics describe and differentiate between different false information types."
+    status: "Results currently under review"
+    affiliations: 
+      - "Centre for Digital Citizens"
+      - "DCitizens Project"
+    links:
+      cdc: "https://digitalcitizens.uk/"
+      dcitizens: "https://dcitizens.eu/"
+    
+  - title: "Older Adults' Trust in GenAI Content"
+    subtitle: "Exploring how the use of GenAI in news impacts older adults' trust in news sources"
+    period: "2024 - 2025"
+    role: "Project Lead"
+    position: "Innovation Fellow"
+    team: "Dr Lauren Scott, Dr James Nicholson"
+    description: "Explored whether an understanding of GenAI impacted older adults' trust in news."
+    status: "Findings being prepared for publication"
+    affiliations: 
+      - "Centre for Digital Citizens"
+      - "DCitizens Project"
+    links:
+      cdc: "https://digitalcitizens.uk/"
+      dcitizens: "https://dcitizens.eu/"
+    
+  - title: "Bridging the Digital Divide"
+    subtitle: "The contribution of public libraries to facilitating older people's digital literacy and inclusion in an increasingly digital society"
+    period: "2023 - 2025"
+    role: "Researcher"
+    team: "Dr Biddy Casselden (PI), Dr Lauren Scott, Dr David P. Hastings, Sean Howley, Prof Nicola Whitton"
+    description: "Explored the barriers and opportunities for older adults engaging in digital literacy education through library services."
+    status: "Findings currently under review"
+    
+  - title: "Exploring Misinformation Correction Within Close-Tie Family Networks"
+    subtitle: "PhD Thesis: Exploring how families spot/challenge/correct false information from other family members"
+    period: "2021 - 2024"
+    role: "PhD Researcher"
+    supervisors: "Dr Marta E. Cecchinato, Dr Mark Warner"
+    advisors: "Prof. Lynne Coventry (previously 2nd supervisor), Dr Nicholas Sheep Dalton (3rd supervisor)"
+    description: "Explored how misinformation was corrected within close-tie family networks through qualitative research methods."
+    publications:
+      - citation: "Scott, L., Lynne Coventry, Marta E Cecchinato, and Mark Warner. 2023. \"I figured her feeling a little bit bad was worth it to not spread that kind of hate\": Exploring how UK families discuss and challenge misinformation. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems. Association for Computing Machinery, New York, USA (pp. 1-15)."
+      - citation: "Scott, L., E. Cecchinato, M., Coventry, L. and Warner, M., 2023, August. Evaluating the effects of culture and relationship strength on misinformation challenging behaviours within the UK. In IFIP Conference on Human-Computer Interaction (pp. 429-438). Cham: Springer Nature Switzerland."
+      - citation: "Scott, L., 2023, April. Exploring the Potential Role of Digital Technologies to Support Family Networks with Misinformation Correction. In Extended Abstracts of the 2023 CHI Conference on Human Factors in Computing Systems (pp. 1-4)."
+      - citation: "Scott, L., Warner, M., Coventry, L. and Cecchinato, M.E., 2025. Accidental Spreaders: How Different Roles Interact During Misinformation Discussions. In Proceedings of the 23rd EUSSET Conference on Computer Supported Cooperative Work. European Society for Socially Embedded Technologies (EUSSET)."
+
+# Research Leadership Roles
+leadership_roles:
+  - role: "Safety and Security Theme Co-Lead"
+    organization: "Urban Futures IDRT"
+    institution: "Northumbria University"
+    period: "Current"
