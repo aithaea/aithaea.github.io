@@ -1,0 +1,189 @@
+---
+layout: default
+title: Research
+---
+
+<section class="page-header">
+    <h1>Research</h1>
+    <p>Academic research, collaborative projects, and scholarly publications</p>
+</section>
+
+<!-- Leadership Roles -->
+{% if site.data.research_projects.leadership_roles %}
+<section id="leadership-roles">
+    <h2>Research Leadership</h2>
+    <div class="leadership-grid">
+        {% for role in site.data.research_projects.leadership_roles %}
+        <div class="leadership-card">
+            <h3>{{ role.role }}</h3>
+            <p class="organization">{{ role.organization }}</p>
+            <p class="institution">{{ role.institution }}</p>
+            <p class="period">{{ role.period }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+<!-- Current Research Projects -->
+<section id="current-research">
+    <h2>Current Research Projects</h2>
+    
+    <div class="research-grid">
+        {% for project in site.data.research_projects.current_projects %}
+        <article class="research-card current">
+            <div class="research-header">
+                <div>
+                    <h3>{{ project.title }}</h3>
+                    {% if project.subtitle %}
+                    <p class="subtitle">{{ project.subtitle }}</p>
+                    {% endif %}
+                </div>
+                <span class="status-badge current">Ongoing</span>
+            </div>
+            
+            <div class="research-meta">
+                <span class="period">{{ project.period }}</span>
+                {% if project.role %}
+                <span class="role">{{ project.role }}</span>
+                {% endif %}
+                {% if project.funding %}
+                <span class="funding">Funded by {{ project.funding }}</span>
+                {% endif %}
+            </div>
+            
+            {% if project.project_name %}
+            <p class="project-name"><strong>Project:</strong> {{ project.project_name }}</p>
+            {% endif %}
+            
+            <p class="description">{{ project.description }}</p>
+            
+            {% if project.links %}
+            <div class="project-links">
+                {% if project.links.website %}
+                <a href="{{ project.links.website }}" target="_blank" rel="noopener">Project Website</a>
+                {% endif %}
+            </div>
+            {% endif %}
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Past Research Projects -->
+<section id="past-research">
+    <h2>Past Research Projects</h2>
+    
+    {% for project in site.data.research_projects.past_projects %}
+    <article class="research-card past">
+        <div class="research-header">
+            <div>
+                <h3>{{ project.title }}</h3>
+                {% if project.subtitle %}
+                <p class="subtitle">{{ project.subtitle }}</p>
+                {% endif %}
+            </div>
+            <span class="status-badge past">Completed</span>
+        </div>
+        
+        <div class="research-meta">
+            <span class="period">{{ project.period }}</span>
+            {% if project.role %}
+            <span class="role">{{ project.role }}</span>
+            {% endif %}
+            {% if project.funding %}
+            <span class="funding">Funded by {{ project.funding }}</span>
+            {% endif %}
+        </div>
+        
+        {% if project.team %}
+        <p class="team"><strong>Team:</strong> {{ project.team }}</p>
+        {% endif %}
+        
+        {% if project.supervisors %}
+        <p class="supervisors"><strong>Supervisors:</strong> {{ project.supervisors }}</p>
+        {% endif %}
+        
+        {% if project.advisors %}
+        <p class="advisors"><strong>Advisors:</strong> {{ project.advisors }}</p>
+        {% endif %}
+        
+        <p class="description">{{ project.description }}</p>
+        
+        {% if project.status %}
+        <p class="project-status"><strong>Status:</strong> {{ project.status }}</p>
+        {% endif %}
+        
+        {% if project.affiliations %}
+        <div class="affiliations">
+            <strong>Affiliations:</strong>
+            {% for affiliation in project.affiliations %}
+            <span class="affiliation-tag">{{ affiliation }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+        
+        {% if project.publications %}
+        <div class="phd-publications">
+            <strong>Key Publications:</strong>
+            <ul>
+                {% for pub in project.publications %}
+                <li>{{ pub.citation }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+        
+        {% if project.links %}
+        <div class="project-links">
+            {% if project.links.project %}
+            <a href="{{ project.links.project }}" target="_blank" rel="noopener">Project Page</a>
+            {% endif %}
+            {% if project.links.funder %}
+            <a href="{{ project.links.funder }}" target="_blank" rel="noopener">Funder Information</a>
+            {% endif %}
+            {% if project.links.cdc %}
+            <a href="{{ project.links.cdc }}" target="_blank" rel="noopener">Centre for Digital Citizens</a>
+            {% endif %}
+            {% if project.links.dcitizens %}
+            <a href="{{ project.links.dcitizens }}" target="_blank" rel="noopener">DCitizens Project</a>
+            {% endif %}
+        </div>
+        {% endif %}
+    </article>
+    {% endfor %}
+</section>
+
+<!-- Publications from ORCID -->
+<section id="publications">
+    <h2>Publications</h2>
+    <p class="publications-intro">Automatically updated from ORCID</p>
+    
+    {% if site.data.publications %}
+        <div class="publications-list">
+            {% for pub in site.data.publications %}
+            <article class="publication">
+                <h3>{{ pub.title }}</h3>
+                <p class="authors">{{ pub.authors }}</p>
+                <p class="venue-year">
+                    <span class="venue">{{ pub.venue }}</span>
+                    {% if pub.year != 'N/A' %}
+                    <span class="year">({{ pub.year }})</span>
+                    {% endif %}
+                </p>
+                
+                <div class="pub-links">
+                    {% if pub.url %}
+                    <a href="{{ pub.url }}" target="_blank" rel="noopener">View Paper</a>
+                    {% endif %}
+                    {% if pub.doi %}
+                    <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI</a>
+                    {% endif %}
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>Publications loading...</p>
+    {% endif %}
+</section>
