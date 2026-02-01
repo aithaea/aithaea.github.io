@@ -1,4 +1,4 @@
-/* Your own custom design - completely up to you! */
+/* CSS */
 :root {
     --primary: #2c3e50;
     --accent: #3498db;
@@ -984,5 +984,64 @@ footer {
     .research-meta .role:before,
     .research-meta .funding:before {
         content: "";
+    }
+}
+/* Header and Navigation */
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem; /* Adds space between h1 and ul */
+}
+
+nav h1 {
+    margin: 0;
+    flex-shrink: 0; /* Prevents h1 from shrinking */
+}
+
+nav h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    margin-left: auto; /* Pushes ul to the right */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    nav ul {
+        margin-left: 0;
+        justify-content: center;
     }
 }

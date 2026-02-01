@@ -61,6 +61,7 @@ past_projects:
     subtitle: "Exploring how members of the public define/describe false information types"
     period: "2024 - 2025"
     role: "Project Lead"
+    funding: "EPSRC: Centre for Digital Citizens"
     position: "Innovation Fellow"
     team: "Dr Lauren Scott, Dr Kyle Montague, Dr Mark Warner, Dr Marta E. Cecchinato"
     description: "Led a project exploring how non-academics describe and differentiate between different false information types."
@@ -76,6 +77,8 @@ past_projects:
     subtitle: "Exploring how the use of GenAI in news impacts older adults' trust in news sources"
     period: "2024 - 2025"
     role: "Project Lead"
+    funding: "EPSRC: Centre for Digital Citizens"
+
     position: "Innovation Fellow"
     team: "Dr Lauren Scott, Dr James Nicholson"
     description: "Explored whether an understanding of GenAI impacted older adults' trust in news."
@@ -91,6 +94,8 @@ past_projects:
     subtitle: "The contribution of public libraries to facilitating older people's digital literacy and inclusion in an increasingly digital society"
     period: "2023 - 2025"
     role: "Researcher"
+    funding: "British Academy"
+
     team: "Dr Biddy Casselden (PI), Dr Lauren Scott, Dr David P. Hastings, Sean Howley, Prof Nicola Whitton"
     description: "Explored the barriers and opportunities for older adults engaging in digital literacy education through library services."
     status: "Findings currently under review"
