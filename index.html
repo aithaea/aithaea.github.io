@@ -2,66 +2,52 @@
 layout: default
 ---
 
-<section class="hero">
-    <h2>{{ site.description }}</h2>
-    <p>Using HCI methods to increase AI, media, digital, and misinformation literacies in vulnerable groups.</p>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-        {% for project in site.data.achievements.projects %}
-        <article class="project-card">
-            <h3>{{ project.title }}</h3>
-            <p class="date">{{ project.date }}</p>
-            <p>{{ project.description }}</p>
-            <ul class="skills">
-                {% for skill in project.skills %}
-                <li>{{ skill }}</li>
-                {% endfor %}
-            </ul>
-            <a href={{project.site-url}}>More info</a>
-        </article>
-        {% endfor %}
+<section class="hero-with-bg">
+    <div class="hero-overlay">
+        <h1>{{ site.data.home.name }}</h1>
+        <p class="title">{{ site.data.home.title }}</p>
     </div>
 </section>
 
-<section id="experience">
-    <h2>Experience</h2>
-    {% for job in site.data.achievements.work %}
-    <article class="job">
-        <h3>{{ job.role }}</h3>
-        <p class="organization">{{ job.organization }} | {{ job.period }}</p>
-        <p>{{ job.focus }}</p>
-    </article>
-    {% endfor %}
-</section>
-
-<section id="publications">
-    <h2>Publications</h2>
-    
-    {% if site.data.publications %}
-        {% for pub in site.data.publications %}
-        <article class="publication">
-            <h3>{{ pub.title }}</h3>
-            <p class="authors">{{ pub.authors }}</p>
-            <p class="venue-year">
-                <span class="venue">{{ pub.venue }}</span>
-                {% if pub.year != 'N/A' %}
-                <span class="year">({{ pub.year }})</span>
-                {% endif %}
-            </p>
-            <div class="pub-links">
-                {% if pub.url %}
-                <a href="{{ pub.url }}" target="_blank" rel="noopener">View Paper</a>
-                {% endif %}
-                {% if pub.doi %}
-                <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI</a>
-                {% endif %}
+<section class="home-content">
+    <div class="content-box">
+        <div class="section">
+            <h2>Research Interests</h2>
+            <p>{{ site.data.home.research_interests }}</p>
+        </div>
+        
+        <div class="section">
+            <h2>About Me</h2>
+            <p>{{ site.data.home.about }}</p>
+        </div>
+        
+        <div class="section">
+            <h2>Contacting Me</h2>
+            <p><strong>Email:</strong> <a href="mailto:{{ site.data.home.contact.email }}">{{ site.data.home.contact.email }}</a></p>
+            <p><strong>LinkedIn:</strong> <a href="{{ site.data.home.contact.linkedin.url }}" target="_blank" rel="noopener">{{ site.data.home.contact.linkedin.display }}</a></p>
+        </div>
+        
+        <div class="section news-section">
+            <h2>Latest News</h2>
+            {% for item in site.data.home.news %}
+            <div class="news-item">
+                <p>
+                    {{ item.text }}
+                    {% if item.link %}
+                    <a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.link_text }}</a>
+                    {% endif %}
+                </p>
             </div>
-        </article>
-        {% endfor %}
-    {% else %}
-        <p>Publications loading...</p>
-    {% endif %}
+            {% endfor %}
+        </div>
+        
+        <div class="section upcoming-section">
+            <h2>Upcoming Trips</h2>
+            {% for trip in site.data.home.upcoming %}
+            <div class="trip-item">
+                <p>I will be attending <strong>{{ trip.event }}</strong> in {{ trip.location }} in {{ trip.date }}{% if trip.note %}, {{ trip.note }}{% endif %}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </section>
