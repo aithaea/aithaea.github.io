@@ -1,0 +1,24 @@
+name: "Dr Lauren Scott"
+title: "Lecturer in Computer Science"
+
+research_interests: "Mis/Disinformation correction, Digital Literacy, Generative AI, AI Literacy, Human-Computer Interaction, Speculative Design, Human-Centred Cybersecurity"
+
+about: "I am currently a lecturer of Computer Science at Northumbria University, leading modules on Human-Centred AI, and Game Design. My research focusses on building vulnerable (older adults/school-age children) individuals' capacities in spotting and challenging mis/disinformation, in using Generative AI responsibly and recognising AI generated content, and in improving their digital literacy."
+
+contact:
+  email: "lauren8.scott@northumbria.ac.uk"
+  linkedin: 
+    url: "https://www.linkedin.com/in/lauren-s-4255bb134/"
+    display: "linkedin.com/in/lauren-s-4255bb134"
+
+news:
+  - text: "Our first forum article has been published in Interactions magazine"
+    link: "https://interactions.acm.org/archive/view/january-february-2026/delightful-encounters-fun-curiosity-and-connection-in-design"
+    link_text: "find it here"
+  - text: "I recently served as an AC for the Understanding People (qualitative) CHI subcommittee!"
+
+upcoming:
+  - event: "CHI 2026"
+    location: "Barcelona"
+    date: "April"
+    note: "if you see me there please say hi!"
