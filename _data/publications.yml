@@ -1,3 +1,17 @@
+- title: 'Delightful Encounters: Fun, Curiosity, and Connection in Design'
+  authors: Anna R. L. Carter, Dalya Al-Shahrabi, Lauren Scott, Patricia Piedade
+  year: '2026'
+  venue: Interactions
+  doi: 10.1145/3780154
+  url: https://doi.org/10.1145/3780154
+- title: 'Accidental spreaders: How Different Roles Interact During Misinformation
+    Discussions'
+  authors: Lauren Scott, Mark Warner, Lynne Coventry, Marta Cecchinato
+  year: '2025'
+  venue: Proceedings of the 23rd EUSSET Conference on Computer Supported Cooperative
+    Work
+  doi: 10.48340/ecscw2025_cp01
+  url: https://doi.org/10.48340/ecscw2025_cp01
 - title: 'KaraokAI: Exploring the Potential of AI-Generated Karaoke for Academic Conferences
     and Research Experiences'
   authors: Anna R. L. Carter, Dalya Al-Shahrabi, William A. P. Imoukhuede, Lauren
@@ -14,28 +28,35 @@
   venue: Proceedings of the International Conference on Animal-Computer Interaction
   doi: 10.1145/3702336.3702355
   url: https://doi.org/10.1145/3702336.3702355
+- title: Evaluating the Effects of Culture and Relationship Strength on Misinformation
+    Challenging Behaviours Within the UK
+  authors: Lauren Scott, Marta E. Cecchinato, Lynne Coventry, Mark Warner
+  year: '2023'
+  venue: Human-Computer Interaction – INTERACT 2023
+  doi: 10.1007/978-3-031-42286-7_23
+  url: https://doi.org/10.1007/978-3-031-42286-7_23
 - title: Exploring the Potential Role of Digital Technologies to Support Family Networks
     with Misinformation Correction
   authors: Lauren Scott
   year: '2023'
-  venue: Extended Abstracts of the 2023 CHI Conference on Human Factors in Computing
-    Systems
+  venue: 'CHI EA ''23: Extended Abstracts of the 2023 CHI Conference on Human Factors
+    in Computing Systems'
   doi: 10.1145/3544549.3577054
   url: https://doi.org/10.1145/3544549.3577054
-- title: '“I figured her feeling a little bit bad was worth it to not spread that
-    kind of hate”: Exploring how UK families discuss and challenge misinformation'
-  authors: Lauren Scott, Lynne Coventry, Marta E. Cecchinato, Mark Warner
+- title: “I figured her feeling a little bit bad was worth it to not spread that kind
+    of hate”
+  authors: Lauren Scott, Lynne Coventry, Marta Cecchinato, Mark Warner
   year: '2023'
-  venue: Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems
+  venue: 'CHI ''23: Proceedings of the 2023 CHI Conference on Human Factors in Computing
+    Systems'
   doi: 10.1145/3544548.3581202
   url: https://doi.org/10.1145/3544548.3581202
-- title: Evaluating the Effects of Culture and Relationship Strength on Misinformation
-    Challenging Behaviours Within the UK
-  authors: Lauren Scott, Marta E. Cecchinato, Lynne Coventry, Mark Warner
-  year: '2023'
-  venue: Lecture Notes in Computer Science
-  doi: 10.1007/978-3-031-42286-7_23
-  url: https://doi.org/10.1007/978-3-031-42286-7_23
+- title: Studying the Impact of Gamification on Motivation in Remote Programming Education
+  authors: Lauren Scott, Nick Dalton
+  year: '2021'
+  venue: Proceedings of the 20th European Conference on e-Learning
+  doi: ''
+  url: ''
 - title: Studying the Impact of Gamification on Motivation in Remote Programming Education
   authors: Lauren Scott
   year: '2021'
